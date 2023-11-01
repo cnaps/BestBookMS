@@ -1,4 +1,4 @@
-package com.msa.rental.config;
+package com.msa.bestbook.config;
 
 import org.springframework.context.annotation.Configuration;
 

@@ -3,14 +3,14 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
   application:
-    name: rantalms
+    name: bestbookms
   profiles:
     active: default
-  datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: test
   jpa:
     hibernate:
       ddl-auto: create
@@ -23,7 +23,7 @@ spring:
       path: /h2-console
 
 server:
-  port: 8081
+  port: 8084
 
 logging:
   level:
